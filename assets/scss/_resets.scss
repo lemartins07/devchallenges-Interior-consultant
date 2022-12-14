@@ -1,0 +1,24 @@
+/** RESETS **/
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
