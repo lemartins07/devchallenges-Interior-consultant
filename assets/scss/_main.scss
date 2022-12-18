@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   gap: 8rem;
+  margin-bottom: 5rem;
 
   .main__hero {
     min-width: 400px;
     &-title {
-      font-family: "Lora";
+      font-family: $font-secondary;
       font-weight: $font-semi-bold;
       font-size: $font-size-xl;
       line-height: 61px;
@@ -14,11 +15,19 @@
     }
 
     &-description {
-      font-family: "Montserrat";
+      font-family: $font-primary;
       font-weight: $font-normal;
       font-size: $font-size-l;
       line-height: 29px;
       max-width: 400px;
+      margin-bottom: 4rem;
+    }
+
+    &-link {
+      font-family: $font-primary;
+      font-weight: $font-bold;
+      font-size: $font-size-m;
+      line-height: 22px;
     }
   }
 
