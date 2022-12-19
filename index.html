@@ -19,7 +19,21 @@
   <header class="header container">
     <nav class="nav">
       <a class="nav__logo" href="#">this interior</a>
-      <ul class="nav__menu">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <div id="menu">
+          <ul id="menu-list">
+            <li class="nav__menu-item"><a class="nav__menu-link nav__menu-link--active" href="#">Home</a></li>
+            <li class="nav__menu-item"><a class="nav__menu-link" href="#">Collection</a></li>
+            <li class="nav__menu-item"><a class="nav__menu-link" href="#">About</a></li>
+            <li class="nav__menu-item"><a class="nav__menu-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="nav__menu" id="menu-desktop">
         <li class="nav__menu-item"><a class="nav__menu-link nav__menu-link--active" href="#">Home</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="#">Collection</a></li>
         <li class="nav__menu-item"><a class="nav__menu-link" href="#">About</a></li>

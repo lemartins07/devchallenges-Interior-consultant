@@ -1,4 +1,7 @@
 .footer {
   padding: 2rem;
   text-align: center;
+  @include maxWidth(400px) {
+    font-size: $font-size-s;
+  }
 }

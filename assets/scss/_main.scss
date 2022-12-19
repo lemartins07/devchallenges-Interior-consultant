@@ -2,7 +2,14 @@
   display: flex;
   align-items: center;
   gap: 8rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
+
+  @include maxWidth(960px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 
   .main__hero {
     min-width: 400px;
@@ -12,6 +19,10 @@
       font-size: $font-size-xl;
       line-height: 61px;
       margin-bottom: 3rem;
+      @include maxWidth(400px) {
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+      }
     }
 
     &-description {
@@ -21,6 +32,10 @@
       line-height: 29px;
       max-width: 400px;
       margin-bottom: 4rem;
+      @include maxWidth(400px) {
+        font-size: $font-size-m;
+        margin-bottom: 2rem;
+      }
     }
 
     &-link {
@@ -30,6 +45,9 @@
       line-height: 22px;
       display: flex;
       align-items: center;
+      @include maxWidth(400px) {
+        font-size: $font-size-s;
+      }
 
       span {
         margin-left: 1rem;
@@ -56,10 +74,28 @@
         gap: 20px;
       }
 
-      .main__card-img img {
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
+      .main__card-img {
+        display: flex;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+        }
+
+        .main__card-box {
+          &-name {
+            font-size: $font-size-s;
+            line-height: 17px;
+            margin-bottom: 0.5rem;
+          }
+
+          &-job {
+            font-size: $font-size-xs;
+            color: $color-gray;
+          }
+        }
       }
     }
   }
